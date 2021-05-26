@@ -12,7 +12,7 @@ export default function Card({ title, toUrl }){
         })}>
             <div className={styles.content}>
                 <h3 className={styles.content__title}>{title ? title : "Title"}</h3>
-
+                {/* More content here later */}
             </div>
         </div>
         </Link>
