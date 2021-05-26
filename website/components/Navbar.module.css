@@ -1,0 +1,21 @@
+.navbar{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.navItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.navItem__home{
+    font-size: 2rem;
+}
+
+.navFiller{
+    flex-grow: 1;
+}

@@ -1,0 +1,29 @@
+.card{
+    border: 2px solid black;
+    min-width: 300px;
+    width: 25%;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.card:hover{
+    transform: translateY(-30px);
+}
+  
+
+.disabled {
+    opacity: 0.5;
+    cursor: inherit;
+}
+.disabled:hover{
+    transform: translateY(0px);
+}
+
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__title{
+    text-align: center;
+}

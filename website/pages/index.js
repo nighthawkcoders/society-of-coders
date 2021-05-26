@@ -1,0 +1,32 @@
+import Layout from '../components/Layout';
+import Card from '../components/Card';
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+
+export default function Home() {
+  return (
+    <Layout>
+      <div className={styles.container}>
+
+        <main className={styles.main}>
+          
+          <div className={styles.title}>
+            <h1>Society of Coders</h1>
+            <p className={styles.lead}>A better way to study for computer science.</p>
+          </div>
+
+          <div className={styles.featured}>
+              <Card title="Gotchas" toUrl="gotchas"/>
+
+              <Card title="Topic Review"/>
+              <Card title="Tips & Tricks"/>
+          </div>
+
+          
+
+        </main>
+
+      </div>
+    </Layout>
+  )
+}
