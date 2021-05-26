@@ -22,6 +22,10 @@ export default function Home() {
               <Card title="Tips & Tricks"/>
           </div>
 
+          <div className={styles.about}>
+          {/* //https://api.github.com/repos/nighthawkcoders/csa-society/contributors */}
+            <p className={styles.lead}>How does it work?</p>
+          </div>
           
 
         </main>

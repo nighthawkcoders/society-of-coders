@@ -30,9 +30,11 @@
   justify-content: space-around;
 }
 
-.card{
-  background-color: red;
+.about{
+  text-align: center;
+  margin: 100px;
 }
+
 
 /* .container {
   min-height: 100vh;

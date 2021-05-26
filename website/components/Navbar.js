@@ -12,6 +12,12 @@ export default function Navbar(){
             
             <div className={styles.navFiller}></div>
 
+            <div className={styles.navItem}>
+                <a href="https://github.com/nighthawkcoders/csa-society"
+                target="_blank"
+                className={"fab fa-github "+styles.navItem__text}></a>
+            </div>
+
         </nav>
     )
 }

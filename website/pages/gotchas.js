@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import Layout from '../components/Layout';
 import { getFolderData } from '../lib/postdata';
 import styles from '../styles/Gotchas.module.css';
 
 export default function Gotchas({ allPostData }){
-
+    // redo this
     return (
         <Layout>
             <div className={styles.container}>
@@ -11,9 +12,9 @@ export default function Gotchas({ allPostData }){
                 {allPostData.map((data) => {
                     return (
                         <div className={styles.b}>
-                            <p>{data.title}</p>
                             <p>{data.author}</p>
                             <p>{data.date}</p>
+                            <Link href={"/gotchas/"+data.id}>{data.title}</Link>
                         </div>
                     )
                 })}

@@ -1,0 +1,43 @@
+.container{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.container__box{
+    max-width: 800px;
+}
+
+.title h1{
+    margin-bottom: 0px;
+}
+
+.meta_info{
+    width: 90%;
+    text-align: end;
+}
+
+.meta_info p {
+    margin: 0px;
+}
+
+.content{
+    min-height: 400px;
+}
+
+.attribution {
+    text-align: right;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
