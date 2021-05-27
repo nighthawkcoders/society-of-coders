@@ -1,0 +1,32 @@
+.results{
+    position: fixed;
+    right: 100px;
+    width: 400px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+}
+
+.result:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+
+.title{
+    width: 80%;
+    border-right: 1px solid rgb(226, 226, 226);
+}
+
+.topic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(158, 158, 158);
+    flex-grow: 1;
+}
+

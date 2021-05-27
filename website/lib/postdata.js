@@ -68,3 +68,23 @@ export async function getPostDataByFileName(folder, id){
       ...matterResult.data
     }
 }
+
+export function getAllPostData() {
+    const topics = ["gotchas",];
+    var data = [];
+    for(const topic of topics){
+        const relDir = path.join(dataDir, topic);
+        const topicData = fs.readdirSync(relDir).map(fileName => {
+            const id = fileName.replace(/\.md$/, '');
+            const fullFilePath = path.join(relDir, fileName);
+            const fileContent = fs.readFileSync(fullFilePath, 'utf8');
+            const matterResult = matter(fileContent);
+            return {
+                id, topic, ...matterResult.data
+            }
+        });
+
+        data = [...data, ...topicData];
+    }
+    return data;
+}

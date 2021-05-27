@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    cursor: pointer;
 }
 
 .navItem__text{
@@ -19,6 +18,7 @@
 
 .navItem__home{
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .navFiller{

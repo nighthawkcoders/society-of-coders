@@ -26,7 +26,7 @@ export default function Gotchas({ allPostData }){
                             <ol>
                                 {allPostData.map((data) => {
                                     return (
-                                        <li className={styles.link}>
+                                        <li className={styles.link} key={data.id}>
                                             <Link href={"/gotchas/"+data.id}>{data.title}</Link>
                                         </li>
                                     )

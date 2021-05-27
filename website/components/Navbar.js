@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SearchBar from './SearchBar';
 import styles from './Navbar.module.css';
 
 export default function Navbar(){
@@ -12,6 +13,10 @@ export default function Navbar(){
             
             <div className={styles.navFiller}></div>
 
+            <div className={styles.navItem}>
+                <SearchBar />
+            </div>
+            
             <div className={styles.navItem}>
                 <a href="https://github.com/nighthawkcoders/csa-society"
                 target="_blank"
