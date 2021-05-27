@@ -12,7 +12,7 @@ export default function Home() {
           
           <div className={styles.title}>
             <h1>Society of Coders</h1>
-            <p className={styles.lead}>A better way to study for computer science.</p>
+            <p className={styles.lead}>A better way to study computer science.</p>
           </div>
 
           <div className={styles.featured}>
