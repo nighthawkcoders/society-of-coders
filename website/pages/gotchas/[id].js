@@ -10,6 +10,7 @@ export default function Post({ postData }){
             <div className={styles.container}>
                 <div className={styles.container__box}>
                     <div className={styles.title}>
+                        <small><i class="fas fa-caret-left"></i> <Link href="/gotchas">Back to gotchas</Link></small>
                         <h1>{postData.title}</h1>
                         <div className={styles.meta_info}>
                             {/* <p>Unit 1</p> */}
