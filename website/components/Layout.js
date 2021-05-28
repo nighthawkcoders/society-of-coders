@@ -18,6 +18,10 @@ export default function Layout({ children, pageTitle, helpIconPresent }){
                 {children}
             </div>
 
+            <footer className={styles.footer}>
+                Created by the <a href="https://nighthawkcoders.cf/" className={styles.link}>Nighthawk Society of Coders</a>
+            </footer>
+
             {helpIconPresent ? 
                 <div className={styles.helpIcon}>
                     <span>Learn More</span>

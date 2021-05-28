@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Card from '../components/Card';
-import Image from 'next/image'
+import Link from 'next/link';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
 
           <div className={styles.about}>
           {/* //https://api.github.com/repos/nighthawkcoders/csa-society/contributors */}
-            <p className={styles.lead}>How does it work?</p>
+            <p className={styles.lead}><Link href="/about">Learn more!</Link></p>
           </div>
           
 
