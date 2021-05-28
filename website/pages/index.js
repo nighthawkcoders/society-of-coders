@@ -16,9 +16,9 @@ export default function Home() {
           </div>
 
           <div className={styles.featured}>
-              <Card title="Gotchas" toUrl="gotchas"/>
+              <Card title="Gotchas" toUrl="/gotchas"/>
 
-              <Card title="Topic Review"/>
+              <Card title="Lessons" toUrl="/lessons"/>
               <Card title="Tips & Tricks"/>
           </div>
 

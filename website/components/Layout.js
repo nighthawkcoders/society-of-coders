@@ -2,11 +2,11 @@ import Navbar from '../components/Navbar';
 import Head from 'next/head'
 import styles from './Layout.module.css';
 
-export default function Layout({ children, helpIconPresent }){
+export default function Layout({ children, pageTitle, helpIconPresent }){
     return (
         <div className={styles.main_container}>
             <Head>
-                <title>CSA | Society of Coders</title>
+                <title>{pageTitle ? pageTitle : "Home"} | Society of Coders</title>
                 <meta name="description" content="Student contributed test-prep for getting better scores" />
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>

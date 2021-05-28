@@ -4,9 +4,9 @@ import { getFolderIds, getPostDataByFileName } from '../../lib/postdata';
 import styles from '../../styles/post.module.css';
 
 export default function Post({ postData }){
-    console.log(postData);
+
     return (
-        <Layout>
+        <Layout pageTitle={postData.title}>
             <div className={styles.container}>
                 <div className={styles.container__box}>
                     <div className={styles.title}>
