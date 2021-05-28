@@ -6,7 +6,7 @@ import html from 'remark-html';
 
 const dataDir = path.join(process.cwd(), 'data');
 const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/website/data/' // for connecting to web later
-const TOPICS = ["gotchas","lessons"];
+export const TOPICS = ["gotchas","lessons"];
 
 /**
  * Returns the data for a specified feature,
@@ -93,4 +93,22 @@ export function getAllPostData() {
         data = [...data, ...topicData];
     }
     return data;
+}
+
+export function getAllPostDataForTest(){
+    var postData = {};
+    for(const topic of TOPICS){
+        const relDir = path.join(dataDir, topic);
+        const topicData = fs.readdirSync(relDir).map(fileName => {
+            const id = fileName.replace(/\.md$/, '');
+            const fullFilePath = path.join(relDir, fileName);
+            const fileContent = fs.readFileSync(fullFilePath, 'utf8');
+            const matterResult = matter(fileContent);
+            return {
+                id, topic, ...matterResult.data
+            }
+        });
+        postData[topic] = topicData;
+    }
+    return postData;
 }
