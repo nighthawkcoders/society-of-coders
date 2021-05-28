@@ -6,6 +6,7 @@ import html from 'remark-html';
 
 const dataDir = path.join(process.cwd(), 'data');
 const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/website/data/' // for connecting to web later
+const TOPICS = ["gotchas","lessons"];
 
 /**
  * Returns the data for a specified feature,
@@ -34,14 +35,20 @@ export function getFolderData(folder) {
  * @param possible strings: "gotchas"
  * @returns Data slugs
  */
-export function getFolderIds(folder) {
-    return fs.readdirSync(path.join(dataDir, folder)).map(fileName => {
-        return {
-            params: {
-                id: fileName.replace(/\.md$/, ''),
+export function getFolderIds() {
+    const paths = [];
+    for(const folder of TOPICS) {
+        const newPaths = fs.readdirSync(path.join(dataDir, folder)).map(fileName => {
+            return {
+                params: {
+                    id: fileName.replace(/\.md$/, ''),
+                    topic:folder
+                }
             }
-        }
-    });
+        });
+        paths.push(...newPaths);
+    }
+    return paths;
 }
 
 /**
@@ -70,9 +77,8 @@ export async function getPostDataByFileName(folder, id){
 }
 
 export function getAllPostData() {
-    const topics = ["gotchas",];
     var data = [];
-    for(const topic of topics){
+    for(const topic of TOPICS){
         const relDir = path.join(dataDir, topic);
         const topicData = fs.readdirSync(relDir).map(fileName => {
             const id = fileName.replace(/\.md$/, '');

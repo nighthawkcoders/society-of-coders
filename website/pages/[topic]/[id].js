@@ -3,14 +3,14 @@ import Layout from '../../components/Layout';
 import { getFolderIds, getPostDataByFileName } from '../../lib/postdata';
 import styles from '../../styles/post.module.css';
 
-export default function Post({ postData }){
+export default function Post({ postData, topic, id }){
 
     return (
         <Layout pageTitle={postData.title}>
             <div className={styles.container}>
                 <div className={styles.container__box}>
                     <div className={styles.title}>
-                        <small><i class="fas fa-caret-left"></i> <Link href="/gotchas">Back to gotchas</Link></small>
+                        <small><i class="fas fa-caret-left"></i> <Link href={`/${topic}`}>{`Back to ${topic}`}</Link></small>
                         <h1>{postData.title}</h1>
                         <div className={styles.meta_info}>
                             {/* <p>Unit 1</p> */}
@@ -34,7 +34,7 @@ export default function Post({ postData }){
 }
 
 export async function getStaticPaths() {
-    const paths = getFolderIds("gotchas");
+    const paths = getFolderIds();
     return {
         paths,
         fallback: false
@@ -42,10 +42,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postData = await getPostDataByFileName("gotchas", params.id);
+    const postData = await getPostDataByFileName(params.topic, params.id);
     return {
         props: {
-            postData
+            postData,
+            topic:params.topic,
+            id:params.id
         }
     }
 }

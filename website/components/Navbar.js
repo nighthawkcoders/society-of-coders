@@ -7,14 +7,15 @@ export default function Navbar(){
         <nav className={styles.navbar}>
             <div className={styles.navItem}>
                 <Link href="/">
-                    <span className={styles.navItem__home}>Home</span>
+                    <i className={"fas fa-home " + styles.navItem__home}></i>
+                    {/* <span className={styles.navItem__home}>Home</span> */}
                 </Link>
             </div>
             
             <div className={styles.navFiller}></div>
 
             <div className={styles.navItem}>
-                <SearchBar />
+                {/* <SearchBar /> */}
             </div>
             
             <div className={styles.navItem}>

@@ -6,7 +6,7 @@
     transition: transform .5s;
 }
 .card:hover{
-    transform: translateY(-30px);
+    transform: translateY(-15px);
 }
   
 
