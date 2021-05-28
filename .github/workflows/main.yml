@@ -28,5 +28,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and test
         run: |
+          cd website
           npm i
           npm run test
+          npm run build
