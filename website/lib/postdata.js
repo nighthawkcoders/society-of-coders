@@ -76,26 +76,7 @@ export async function getPostDataByFileName(folder, id){
     }
 }
 
-export function getAllPostData() {
-    var data = [];
-    for(const topic of TOPICS){
-        const relDir = path.join(dataDir, topic);
-        const topicData = fs.readdirSync(relDir).map(fileName => {
-            const id = fileName.replace(/\.md$/, '');
-            const fullFilePath = path.join(relDir, fileName);
-            const fileContent = fs.readFileSync(fullFilePath, 'utf8');
-            const matterResult = matter(fileContent);
-            return {
-                id, topic, ...matterResult.data
-            }
-        });
-
-        data = [...data, ...topicData];
-    }
-    return data;
-}
-
-export function getAllPostDataForTest(){
+export function getAllPostData(){
     var postData = {};
     for(const topic of TOPICS){
         const relDir = path.join(dataDir, topic);
