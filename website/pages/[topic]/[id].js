@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import Layout from '../../components/Layout';
 import { getFolderIds, getPostDataByFileName } from '../../lib/postdata';
 import styles from '../../styles/post.module.css';
@@ -7,6 +8,10 @@ export default function Post({ postData, topic, id }){
 
     return (
         <Layout pageTitle={postData.title}>
+            <Head>
+            <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" />
+            </Head>
             <div className={styles.container}>
                 <div className={styles.container__box}>
                     <div className={styles.title}>

@@ -13,9 +13,9 @@ export default function TopicLayout({ topicData, title, sentences }){
 
                     <div className={styles.container__rowbox}>
                         <div className={styles.description}>
-                            {sentences && sentences.map((sentence) => {
+                            {sentences && sentences.map((sentence, i) => {
                                 return (
-                                    <p className={styles.lead}>{sentence}</p>
+                                    <p className={styles.lead} key={i}>{sentence}</p>
                                 )
                             })}
 

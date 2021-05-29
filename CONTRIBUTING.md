@@ -1,5 +1,5 @@
 # How to contribute to Society of Coders
-This project is created 
+This project is created by community contributions. Creating an post is very simple and takes less than 3 minutes.
 
 ## Step 1
 Fork this repository.
@@ -8,7 +8,7 @@ Fork this repository.
 Create a markdown (.md) file under the section of your article in the [data subfolder](https://github.com/nighthawkcoders/csa-society/tree/main/website/data).
 For example if you are a new article to "gotchas" create a new file [here](https://github.com/nighthawkcoders/csa-society/tree/main/website/data/gotchas).
 
-Warning: The filename will be used as a url path so it cannot contain spaces or special characters, use dashes instead.
+Warning: The filename will be used as a url path so it can only contain chars 'a-z', 'A-Z', '0-9', or '-'.
 
 ## Step 3
 Copy and paste the following into your newly created file.

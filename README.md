@@ -1,5 +1,7 @@
 # csa-society
-Complement to PBL. Review for AP CSA test.
+Complement to PBL. Review for AP CSA test. Created by students for students. 
+
+[Learn how to contribute (without writing any code!)](https://github.com/nighthawkcoders/csa-society/blob/main/CONTRIBUTING.md).
 
 ## Sections
 - Gotchas - hidden nuances in language
@@ -8,5 +10,7 @@ Complement to PBL. Review for AP CSA test.
 - Specific Study - algorithims (sorting + searching)
 
 ## Testing
-Frontend site:
-```cd website && npm i && npm run dev```
+The frontend website is created using react + next.js.
+- Install [Node.js](https://nodejs.org/en/)
+-  ```cd website && npm i && npm run dev```
+-  visit [http://localhost:3000/](http://localhost:3000/)

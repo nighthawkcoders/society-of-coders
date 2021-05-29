@@ -3,6 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
+const highlight = require('remark-highlight.js')
+
 
 const dataDir = path.join(process.cwd(), 'data');
 const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/website/data/' // for connecting to web later
@@ -63,6 +65,7 @@ export async function getPostDataByFileName(folder, id){
     const matterResult = matter(fileContents)
 
     const processedContent = await remark()
+        .use(highlight)
         .use(html)
         .process(matterResult.content)
     const htmlContent = processedContent.toString();
