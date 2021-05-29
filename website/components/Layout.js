@@ -7,7 +7,7 @@ export default function Layout({ children, pageTitle, helpIconPresent }){
         <div className={styles.main_container}>
             <Head>
                 <title>{pageTitle ? pageTitle : "Home"} | Society of Coders</title>
-                <meta name="description" content="Student contributed test-prep for getting better scores" />
+                <meta name="description" content="The Society of Coders is a student-contributed repository of java knowledge to optimize study time."/>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
             </Head>
