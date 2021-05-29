@@ -14,7 +14,7 @@ Similary in the statement ```if(a == b && c == d)```, if the first term evaluate
 
 This is useful when trying to avoid divide by 0 errors.
 
-```
+```java
 int x = 10;
 int y = 0;
 

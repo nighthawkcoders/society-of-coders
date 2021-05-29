@@ -1,9 +1,9 @@
 const fs = require('fs');
-const { getAllPostDataForTest } = require('../lib/postdata');
+const { getAllPostData } = require('../lib/postdata');
 
 test("Checks that all posts meet requirements in 'data' directory", () => {
 
-    const allPostData = getAllPostDataForTest();
+    const allPostData = getAllPostData();
     for (const key of Object.keys(allPostData)){
         const topicData = allPostData[key];
         topicData.map(({id, topic, title, date}) => {

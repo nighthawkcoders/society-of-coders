@@ -2,6 +2,8 @@ import Layout from '../components/Layout';
 import styles from '../styles/about.module.css';
 
 export default function About(){
+    // {/* //https://api.github.com/repos/nighthawkcoders/csa-society/contributors */}
+
     return (
         <Layout pageTitle="About">
             <div className={styles.container}>

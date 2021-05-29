@@ -23,8 +23,7 @@ export default function Home() {
           </div>
 
           <div className={styles.about}>
-          {/* //https://api.github.com/repos/nighthawkcoders/csa-society/contributors */}
-            <p className={styles.lead}><Link href="/about">Learn more!</Link></p>
+            {/* <p className={styles.lead}><Link href="/about">Learn more!</Link></p> */}
           </div>
           
 
