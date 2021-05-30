@@ -4,7 +4,7 @@ date: '5-25-2021'
 author: 'Nathaniel C'
 ---
 
-When you pass an array as a parameter to a function, what you are actually passing is a *reference* to the where the array is stored.
+If you pass an array as a parameter to a function, then you are actually passing is a *reference* to the where the array is stored.
 
 This means that if you perform an operation on the array within the function, the changes will be reflected on the original array.
 
