@@ -11,7 +11,7 @@ export default function Home() {
         <main className={styles.main}>
           
           <div className={styles.title}>
-            <h1>Society of Coders</h1>
+            <h1>Society of Coders...</h1>
             <p className={styles.lead}>A better way to study computer science.</p>
           </div>
 

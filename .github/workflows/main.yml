@@ -50,4 +50,17 @@ jobs:
           SSH_PASSWORD: ${{ secrets.PASSWORD }}
           SSH_HOST: ${{ secrets.HOST }}
 
+      - name: cd into dir
+        run: ssh staging 'cd /home/nathaniel/csa-society/website/'
 
+      - name: pull from git
+        run: ssh staging 'sudo git pull'
+
+      - name: Update installs
+        run: ssh staging 'sudo npm i'
+
+      - name: Update build
+        run: ssh staging 'sudo npm run build'
+
+      - name: Restard
+        run: ssh staging 'sudo systemctl restart csasite'
