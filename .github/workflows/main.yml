@@ -46,8 +46,8 @@ jobs:
           script: | 
             whoami
             cd /home/nathaniel/csa-society/website/
-            sudo git pull
-            sudo npm i
-            sudo npm run build
-            sudo systemctl restart csasite
+            sudo git pull -S ${{ secrets.PASSWORD }}
+            sudo npm i -S ${{ secrets.PASSWORD }}
+            sudo npm run build -S ${{ secrets.PASSWORD }}
+            sudo systemctl restart csasite -S ${{ secrets.PASSWORD }}
 
