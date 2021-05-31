@@ -36,31 +36,17 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Configure SSH
-        run: |
-          mkdir -p ~/.ssh/
-          cat >>~/.ssh/config <<END
-          Host staging
-            HostName $SSH_HOST
-            User $SSH_USER
-            Password $SSH_PASSWORD
-          END
-        env:
-          SSH_USER: ${{ secrets.USERNAME }}
-          SSH_PASSWORD: ${{ secrets.PASSWORD }}
-          SSH_HOST: ${{ secrets.HOST }}
-
-      - name: cd into dir
-        run: ssh staging 'cd /home/nathaniel/csa-society/website/'
-
-      - name: pull from git
-        run: ssh staging 'sudo git pull'
-
-      - name: Update installs
-        run: ssh staging 'sudo npm i'
-
-      - name: Update build
-        run: ssh staging 'sudo npm run build'
-
-      - name: Restard
-        run: ssh staging 'sudo systemctl restart csasite'
+      - name: SSH Remote Commands
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: | 
+            whoami
+            cd /home/nathaniel/csa-society/website/
+            git pull
+            npm i
+            npm run build
+            systemctl restart csasite
