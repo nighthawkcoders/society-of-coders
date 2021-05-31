@@ -43,5 +43,11 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          script: whoami
+          script: | 
+            whoami
+            cd /home/nathaniel/csa-society/website/
+            sudo git pull
+            sudo npm i
+            sudo npm run build
+            sudo systemctl restart csasite
 
