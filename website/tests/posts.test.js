@@ -18,10 +18,13 @@ test("Checks that all posts meet requirements in 'data' directory", () => {
             expect(/[^A-Za-z0-9-]/.exec(id)).toBeNull();
 
             //Collegeboard units go from 1 to 10
-            expect(id >= 1 && id <= 10).toBeTruthy();
+            expect(unit >= 1 && unit <= 10).toBe(true);
 
             //Title must be at most 70 chars
             expect(title.length <= 70).toBeTruthy();
+
+            //URL must be at most 25 chars
+            expect(id.length <= 25).toBeTruthy();
         });
     }
 
