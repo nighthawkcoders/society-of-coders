@@ -1,5 +1,5 @@
 ---
-title: 'DeMorgans Law'
+title: "DeMorgan's Law"
 unit: 3
 date: '6-1-2021'
 author: 'Anthony Vo'
@@ -24,4 +24,11 @@ if ((x < 10 && y > 0) || z == 5) { // Line 5
 ```
 What other conditional, inserted into Line 5, would make the program run the same as above?
 
-To do this question, you have to break down the conditional into simpler parts. Let's make (x < 10 && y > 0) our A and (z == 5) our B. Since we're trying to find an equivalent conditional, we can set our A and B to !A and !B. !(x < 10 && y > 0) goes to (x >= 10 || y < 0) and z == 5 goes to z != 5. Since we know that !A || !B is the same as !(A && B), we can convert our conditional to !((x >= 10 || y < 0) && z != 5). Finally, since we took the ! of our original expression, we can reconvert our new conditional to ((x >= 10 || y < 0) && z != 5), which is our final answer. Though you could brute force this question by testing values of x, y, and z, this would take too much time and may make your pacing worse.
+- Step 1: Set (x < 10 && y > 0) to A and (z == 5) to B. 
+- Step 2: Set A and B to !A and !B. 
+- Step 3: !(x < 10 && y > 0) goes to (x >= 10 || y < 0) and z == 5 goes to z != 5. 
+- Step 4: Demorgan's Law states that !A || !B is the same as !(A && B); set conditional to !((x >= 10 || y < 0) && z != 5). 
+- Step 5: Remove the !, as we used it in the first step
+- Final answer: ((x >= 10 || y <= 0) && z != 5) 
+
+Though you could brute force this question by testing values of x, y, and z, this would take too much time and may make your pacing worse.
