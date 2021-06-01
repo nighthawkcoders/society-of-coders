@@ -3,6 +3,7 @@ title: 'Arrays hold their reference when being passed to functions'
 unit: 10
 date: '5-25-2021'
 author: 'Nathaniel C'
+authorLink: 'https://github.com/nathanielCherian'
 ---
 
 If you pass an array as a parameter to a function, then you are actually passing is a *reference* to the where the array is stored.
