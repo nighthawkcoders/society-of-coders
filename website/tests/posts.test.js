@@ -6,7 +6,7 @@ test("Checks that all posts meet requirements in 'data' directory", () => {
     const allPostData = getAllPostData();
     for (const key of Object.keys(allPostData)){
         const topicData = allPostData[key];
-        topicData.map(({id, topic, title, date}) => {
+        topicData.map(({id, topic, title, unit}) => {
 
             //Required fields
             expect(id).not.toBeUndefined();
