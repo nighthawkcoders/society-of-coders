@@ -6,8 +6,9 @@ import html from 'remark-html';
 const highlight = require('remark-highlight.js')
 
 
-const dataDir = path.join(process.cwd(), 'data');
-const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/website/data/' // for connecting to web later
+// const dataDir = path.join(process.cwd(), 'data');
+const dataDir = path.join(path.dirname(process.cwd()), "data");
+const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/data/' // for connecting to web later
 export const TOPICS = ["gotchas","lessons"];
 
 /**

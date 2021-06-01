@@ -3,6 +3,7 @@ title: 'Short Circut Conditionals in If statements'
 unit: 9
 date: '5-25-2021'
 author: 'Nathaniel C'
+authorLink: 'https://github.com/nathanielCherian'
 ---
 
 You can "short circut" if statements by combining multiple conditionals with || or &&.

@@ -29,7 +29,14 @@ export default function Post({ postData, topic, id }){
                         <a href={postData.webPath} 
                         target="_blank" 
                         className={styles.link}><span className="fas fa-pencil-alt "></span> Edit This Page</a>
-                        <small><i>Contributed by {postData.author} | {postData.date} </i></small>
+                        <small><i>
+                            {postData.author ? 
+                            <span>Contributed by <a href={postData.authorLink} target="_blank">{postData.author}</a> | </span> :
+                            <span></span>
+                            }
+                            
+                            {postData.date} 
+                        </i></small>
                     </div>
 
                 </div>
