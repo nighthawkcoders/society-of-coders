@@ -1,0 +1,47 @@
+.container{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.searchParams{
+    margin-top: 50px;
+}
+
+.units{
+    margin-top: 10px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topics{
+    margin-top: 10px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.unit{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    padding: 5px;
+}
+
+.disabled{
+  color: rgb(122, 122, 122);
+  background-color: transparent !important;
+}
+
+.posts{
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+.postTitle{
+    text-decoration: underline;
+}

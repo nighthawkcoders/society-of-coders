@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router'
 import styles from './SearchBar.module.css';
 
 export default function SearchBar(){
+
+    const router = useRouter();
+
     const [text, setText] = useState("");
     const [allPostData, setPosts] = useState({});
 
@@ -13,6 +18,13 @@ export default function SearchBar(){
             });
         })
     }, []);
+
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter' && text !== "") {
+            router.push('/search')
+        }
+      }
 
     const search = () => {
         if(text === "") return [];
@@ -35,20 +47,31 @@ export default function SearchBar(){
 
     const jsx = validPosts.map((post) => {
         return (
-            <div className={styles.result} key={post.id}>
-                <div className={styles.title}>
-                    <p className={styles.title__p}>{post.title}</p>
+            <Link href={`/${post.topic}/${post.id}`}>
+                <div className={styles.result} key={post.id}>
+                    <div className={styles.title}>
+                        <p className={styles.title__p}>{post.title}</p>
+                    </div>
+                    <div className={styles.topic}>
+                        <small>{post.topic}</small>
+                    </div>
                 </div>
-                <div className={styles.topic}>
-                    <small>{post.topic}</small>
-                </div>
-            </div>
+            </Link>
         )
-    })
+    });
+
+
+    // jsx.push((
+    //     <div className={styles.result + " " + styles.advancedSearch}>
+    //         <div className={""}>
+    //             <p><small>Advanced Search</small></p>
+    //         </div>
+    //     </div>
+    // ))
 
     return (
         <div>
-            <input type="text" className={styles.search} value={text} onChange={(event)=>setText(event.target.value)}/>
+            <input type="text" className={styles.search} value={text} onChange={(event)=>setText(event.target.value)} onKeyDown={(event) => handleKeyDown(event)}/>
             
             {validPosts.length > 0 &&
             

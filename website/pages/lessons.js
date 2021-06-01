@@ -3,8 +3,8 @@ import { getFolderData } from '../lib/postdata';
 
 export default function Lessons({ topicData }){
     const sentences = [
-        "Beyond the basics of Java, there are many hidden nuances in the language that you can be tested on.",
-        "Stay ahead of the curve and be confident in your answers by going over some commonly missed aspects of Java."
+        "Learning the fundamental algorithms and techiques is vital to mastering Java.",
+        "The best way to learn is to practice by following along with your own compiler and trying out the code for yourself."
     ]
     return (
         <TopicLayout topicData={topicData} title="Lessons" sentences={sentences}/>

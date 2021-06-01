@@ -16,6 +16,9 @@ export default function Navbar(){
 
             <div className={styles.navItem}>
                 {/* <SearchBar /> */}
+                <Link href="/search">
+                    <i className={"fas fa-search " + styles.navItem__home}></i>
+                </Link>
             </div>
             
             <div className={styles.navItem}>

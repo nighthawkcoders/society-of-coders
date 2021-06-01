@@ -5,6 +5,7 @@
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .result{
@@ -28,5 +29,10 @@
     justify-content: center;
     color: rgb(158, 158, 158);
     flex-grow: 1;
+}
+
+.advancedSearch{
+    justify-content: center;
+    align-items: center;
 }
 
