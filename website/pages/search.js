@@ -59,7 +59,7 @@ export default function Search({ posts }){
                             releventPosts.length > 0 ? releventPosts.map((post) => {
                                 return (
                                     <div className={styles.postBody}>
-                                        <Link href={post.id}><p className={styles.postTitle}>{post.title}</p></Link>
+                                        <Link href={`/${post.topic}/${post.id}`}><p className={styles.postTitle}>{post.title}</p></Link>
                                     </div>
                                 )
                             }) : 
