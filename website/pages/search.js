@@ -4,6 +4,7 @@ import { TOPICS } from '../lib/global';
 import cn from 'classnames';
 import styles from '../styles/Search.module.css';
 import { getAllPostDataFlat } from '../lib/postdata';
+import Link from 'next/link';
 
 export default function Search({ posts }){
     
@@ -58,7 +59,7 @@ export default function Search({ posts }){
                             releventPosts.length > 0 ? releventPosts.map((post) => {
                                 return (
                                     <div className={styles.postBody}>
-                                        <p className={styles.postTitle}>{post.title}</p>
+                                        <Link href={post.id}><p className={styles.postTitle}>{post.title}</p></Link>
                                     </div>
                                 )
                             }) : 
