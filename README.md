@@ -5,9 +5,9 @@ Complement to PBL. Review for AP CSA test. Created by students for students.
 
 ## Sections
 - Gotchas - hidden nuances in language
-- Topics - quick summary of AP unit
 - Tips and Tricks - helpful suggestions
-- Specific Study - algorithims (sorting + searching)
+- Lessons - Specific study of algorithims (sorting + searching)
+- PBL - useful information for projects
 
 ## Testing
 The frontend website is created using react + next.js.
