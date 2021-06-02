@@ -3,6 +3,7 @@ This project is created by community contributions. Creating an post is very sim
 
 ## Step 1
 Fork this repository.
+![Forking the repo](/media/forking.gif)
 
 ## Step 2
 Create a markdown (.md) file under the section of your article in the [data subfolder](https://github.com/nighthawkcoders/csa-society/tree/main/data).
@@ -10,7 +11,6 @@ For example if you are a new article to "gotchas" create a new file [here](https
 
 Warning: The filename will be used as a url path so it can only contain chars 'a-z', 'A-Z', '0-9', or '-'.
 
-## Step 3
 Copy and paste the following into your newly created file.
 
 ```markdown
@@ -24,6 +24,8 @@ authorLink: 'https://github.com/your-github-here' #Optional
 
 Your content in markdown will go here.
 ```
+
+![Creating the File](/media/createfile.gif)
 
 Tips:
 - The name of your markdown file is <25 chars long.
@@ -44,5 +46,11 @@ APCSA Units:
 - Unit 9: Inheritance
 - Unit 10: Recursion
 
-## Step 4
+## Step 3
 Commit and push your changes and open a pull request to the main repository. It will be reviewed and added to the website.
+
+![Creating the File](/media/openpr.gif)
+
+Tips:
+- If your fork ever falls behind the master repo use the "fetch upstream" feature to sync back up
+![Fetch Upstream](/media/fetchupstream.png)
