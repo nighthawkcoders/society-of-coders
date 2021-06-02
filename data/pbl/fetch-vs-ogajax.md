@@ -1,5 +1,5 @@
 ---
-title: '### Callbacks vs Promises - JavaScript'
+title: 'Callbacks vs Promises - JavaScript'
 date: '06-01-2021'
 keyword: 'asynchttp'
 author: 'Vihan Jayaraman'
