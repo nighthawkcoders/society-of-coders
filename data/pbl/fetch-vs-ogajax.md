@@ -9,7 +9,7 @@ authorLink: 'https://github.com/VihanJ/fetchapi-demo.git' #Optional
 
 
 
-####Asynchronous Operations: Any operation that is run parallel to the main thread.
+#### Asynchronous Operations: Any operation that is run parallel to the main thread.
 
 Normally, when a statement is executed, the main thread is stopped until that statement is resolved with a return value, or just ends.
 
@@ -53,7 +53,7 @@ We will show alternatives to callback functions.
 
 ![](https://lh5.googleusercontent.com/l86WXz-VQxHA4b7EC4R_CIx9TyPyLLILCU4hvkPsda94SZDkaV450hFk2c1cS-ZZbTv2LI4gbqg0w85LVFtw0-VqspGaWl0cbFGymRQQUb-A2K6igCwvL7ABsBF6u7mEK5xCiTDp)
 
-#####OG - AJAX - Subject to "Callback Hell"
+##### OG - AJAX - Subject to "Callback Hell"
 
 Sample Code:
 
@@ -67,7 +67,7 @@ Call-Back Hell Example:
 
 ![](https://lh6.googleusercontent.com/ZWqr1KXRYackvfHMZheoNQDO1hKaUBQ8dKkiT8JlRFmn9zrtcyhfNn77R1WXsLxCZvnKimUDSe8y0nKKeOxX0FcfG-Ws7gp61s7oPS0opQ0zEuU2ZNZJHIX370N-CM-7y20NTiOq)
 
-####Fetch and Promises - Reduces callback hell with Promises
+### Fetch and Promises - Reduces callback hell with Promises
 
 Promises:
 
@@ -77,7 +77,7 @@ Promise - an object that returns the value of the asynchronous function supplied
 
 A promise provides certain handlers and methods for dealing with the asynchronous nature of the request, to reduce callback hell.
 
-####Basic Promise Chain:
+#### Basic Promise Chain:
 
 ex. Function1 - returns a promise as part of its code
 
@@ -85,7 +85,7 @@ ex. Function1 - returns a promise as part of its code
 
 This is much more readable than callback hell
 
-####Fetch with Promise Chains:
+#### Fetch with Promise Chains:
 
 One common tool is the Fetch API, which initially returns a promise, which can then be handled by a promise chain
 
