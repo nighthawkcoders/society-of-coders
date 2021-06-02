@@ -3,13 +3,13 @@ import path from 'path';
 import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
+import {TOPICS, AP_TOPICS} from './global'; 
 const highlight = require('remark-highlight.js')
 
 
 // const dataDir = path.join(process.cwd(), 'data');
 const dataDir = path.join(path.dirname(process.cwd()), "data");
 const baseWebPath = 'https://github.com/nighthawkcoders/csa-society/edit/main/data/' // for connecting to web later
-export const TOPICS = ["gotchas","lessons"];
 
 /**
  * Returns the data for a specified feature,
@@ -100,7 +100,7 @@ export function getAllPostData(){
 
 export function getAllPostDataFlat(){
     var postData = [];
-    for(const topic of TOPICS){
+    for(const topic of AP_TOPICS){
         const relDir = path.join(dataDir, topic);
         const topicData = fs.readdirSync(relDir).map(fileName => {
             const id = fileName.replace(/\.md$/, '');
