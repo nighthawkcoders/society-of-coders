@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Card from '../components/Card';
-import Link from 'next/link';
+import { CLASSES } from '../lib/global';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,10 +16,11 @@ export default function Home() {
           </div>
 
           <div className={styles.featured}>
-              <Card title="Gotchas" toUrl="/gotchas"/>
-
-              <Card title="Lessons" toUrl="/lessons"/>
-              <Card title="Tips & Tricks"/>
+              {CLASSES.map((class_) => {
+                return (
+                  <Card title={class_.title} toUrl={class_.url} />
+                )
+              })}
           </div>
 
           <div className={styles.about}>
