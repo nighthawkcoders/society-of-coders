@@ -34,4 +34,3 @@ export const TOPIC_BY_NAME = {
         ]
     }
 }
-
