@@ -1,6 +1,7 @@
 ---
 title: 'Callbacks vs Promises - JavaScript'
 date: '06-01-2021'
+class: 'CSA'
 keyword: 'asynchttp'
 author: 'Vihan Jayaraman'
 authorLink: 'https://github.com/VihanJ/fetchapi-demo.git' #Optional
