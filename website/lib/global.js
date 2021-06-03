@@ -1,2 +1,2 @@
-export const TOPICS = ["gotchas","lessons", "pbl", "bigIdeas"];
+export const TOPICS = ["gotchas","lessons", "pbl"];
 export const AP_TOPICS = ["gotchas", "lessons"];
