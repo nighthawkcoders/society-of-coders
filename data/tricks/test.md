@@ -2,7 +2,7 @@
 title: 'Test post'
 date: '6-1-21'
 class: 'CSA'
-unit: 8
+section: 8
 author: 'Nathaniel C'
 ---
 

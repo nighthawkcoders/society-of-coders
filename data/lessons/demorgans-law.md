@@ -1,7 +1,7 @@
 ---
 title: "DeMorgan's Law"
 class: 'CSA'
-unit: 3
+section: 3
 date: '6-1-2021'
 author: 'Anthony Vo'
 ---

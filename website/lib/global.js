@@ -2,8 +2,8 @@
 
 // List of classes and metadata
 export const CLASSES = [
-    {title:"CSA", url:"/csa", topics:["gotchas", "lessons", "tricks"]}, 
-    {title:"CSP", url:"/csp", topics:["gotchas", "lessons", "tricks"]}];
+    {title:"CSA", path:"csa", url:"/csa", topics:["gotchas", "lessons", "tricks"]}, 
+    {title:"CSP", path:"csp", url:"/csp", topics:["gotchas", "lessons", "tricks"]}];
 
 // Get class by class name
 export const CLASS_BY_NAME = {"CSA":CLASSES[0], "CSP":CLASSES[1]};

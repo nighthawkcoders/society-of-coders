@@ -1,7 +1,7 @@
 ---
 title: 'Arrays hold their reference when being passed to functions'
 class: 'CSA'
-unit: 10
+section: 10
 date: '5-25-2021'
 author: 'Nathaniel C'
 authorLink: 'https://github.com/nathanielCherian'

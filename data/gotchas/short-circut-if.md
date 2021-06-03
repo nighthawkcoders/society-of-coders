@@ -1,7 +1,7 @@
 ---
 title: 'Short Circut Conditionals in If statements'
 class: 'CSA'
-unit: 9
+section: 9
 date: '5-25-2021'
 author: 'Nathaniel C'
 authorLink: 'https://github.com/nathanielCherian'

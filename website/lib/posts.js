@@ -47,7 +47,6 @@ export function getTopicPaths(){
 }
 
 export function getPostsByClassAndTopic(className, topic){
-    const posts = [];
     const dirPath = path.join(DATA_DIR, topic);
     return fs.readdirSync(dirPath).map((fileName) => {
         const id = fileName.replace(/\.md$/, '');
@@ -80,4 +79,24 @@ export async function getPostContentByTopic(topic, id){
         htmlContent,
         ...matterResult.data
       }
+}
+
+export function getAllPosts(){
+    const posts = []
+    fs.readdirSync(DATA_DIR).map((directory) => {
+        const subDir = path.join(DATA_DIR, directory);
+        const filePaths = fs.readdirSync(subDir).map((filename) => {
+            const fileContents = fs.readFileSync(path.join(subDir, filename), 'utf8');
+            const matterResult = matter(fileContents)
+            const class_ = matterResult.data.class.toLowerCase();
+            return {
+                id:filename.replace(/\.md$/, ''),
+                topic:directory,
+                ...matterResult.data,
+                class:class_
+            }
+        });
+        posts.push(...filePaths);
+    });
+    return posts;
 }

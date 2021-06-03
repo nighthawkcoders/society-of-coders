@@ -2,7 +2,7 @@
 title: 'Comparison'
 date: '06-02-2021'
 class: 'CSA'
-unit: 03
+section: 03
 author: 'Alex Titov' #Optional
 authorLink: 'https://github.com/alextitov19' #Optional 
 ---
