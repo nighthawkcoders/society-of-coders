@@ -1,7 +1,8 @@
 ---
 title: 'Compile-time vs Run-time errors'
 date: '6-2-2021'
-unit: 5
+class: 'CSA'
+section: 5
 author: 'Nathaniel Cherian'
 authorLink: 'https://github.com/nathanielCherian'
 ---

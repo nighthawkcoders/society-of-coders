@@ -10,6 +10,13 @@
     flex-direction: row;
 }
 
+.meta{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+
 .description{
     min-width: 400px;
     max-width: 500px;

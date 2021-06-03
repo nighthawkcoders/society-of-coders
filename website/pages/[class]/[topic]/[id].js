@@ -1,10 +1,13 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Layout from '../../components/Layout';
-import { getFolderIds, getPostDataByFileName } from '../../lib/postdata';
-import styles from '../../styles/post.module.css';
+import Layout from '../../../components/Layout';
+import { getPostPaths, getPostContentByTopic } from '../../../lib/posts';
+// import { getFolderIds, getPostDataByFileName } from '../../../lib/postdata';
+import styles from '../../../styles/post.module.css';
 
-export default function Post({ postData, topic, id }){
+export default function Post({ className, topic, id, postData }){
+    const classNameUpper = className.toUpperCase();
+    const topicUpper = topic.toUpperCase();
 
     return (
         <Layout pageTitle={postData.title}>
@@ -12,14 +15,24 @@ export default function Post({ postData, topic, id }){
             <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" />
             </Head>
+
             <div className={styles.container}>
                 <div className={styles.container__box}>
                     <div className={styles.title}>
-                        <small><i class="fas fa-caret-left"></i> <Link href={`/${topic}`}>{`Back to ${topic}`}</Link></small>
-                        <h1>{postData.title}</h1>
-                        <div className={styles.meta_info}>
-                            {/* <p>Unit 1</p> */}
+
+                        <div className={styles.meta}>
+                            <div>
+                                <small>
+                                    <i class="fas fa-caret-left"></i> <Link href={`/${className}/${topic}`}>{`Back to ${topic}`}</Link>
+                                </small>
+                            </div>
+                            
+                            <div className={styles.meta__right}>
+                                <small>{classNameUpper}/{topicUpper}</small>
+                            </div>
                         </div>
+
+                        <h1>{postData.title}</h1>
                     </div>
                     <hr/>
                     <div className={styles.content} dangerouslySetInnerHTML={{__html:postData.htmlContent}}></div>
@@ -43,10 +56,11 @@ export default function Post({ postData, topic, id }){
             </div>
         </Layout>
     )
+    
 }
 
 export async function getStaticPaths() {
-    const paths = getFolderIds();
+    const paths = getPostPaths();
     return {
         paths,
         fallback: false
@@ -54,12 +68,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const postData = await getPostDataByFileName(params.topic, params.id);
+    const postData = await getPostContentByTopic(params.topic, params.id);
     return {
         props: {
-            postData,
+            className:params.class,
             topic:params.topic,
-            id:params.id
+            id:params.id,
+            postData
         }
     }
+    
 }

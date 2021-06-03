@@ -1,7 +1,8 @@
 ---
 title: 'Comparison'
 date: '06-02-2021'
-unit: 03
+class: 'CSA'
+section: 03
 author: 'Alex Titov' #Optional
 authorLink: 'https://github.com/alextitov19' #Optional 
 ---

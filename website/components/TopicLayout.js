@@ -2,14 +2,15 @@ import Layout from './Layout';
 import Link from 'next/link';
 import styles from './TopicLayout.module.css';
 
-export default function TopicLayout({ topicData, title, sentences }){
+export default function TopicLayout({ topicData, class_, title, sentences }){
     const pathModifier = title.toLowerCase();
     return (
         <Layout pageTitle={title}>
             <div className={styles.container}>
 
                 <div className={styles.container__box}>
-                    <h1>{title}</h1>
+
+                    <h1 className={styles.title}>{title}</h1>
 
                     <div className={styles.container__rowbox}>
                         <div className={styles.description}>
@@ -20,7 +21,7 @@ export default function TopicLayout({ topicData, title, sentences }){
                             })}
 
                             <p className={styles.editText}>
-                                <a href="https://github.com/nighthawkcoders/csa-society/blob/main/CONTRIBUTING.md" target="_blank">See something missing? <span className={styles.underline}>Add it here!</span></a>
+                                <a href="https://github.com/nighthawkcoders/society-of-coders/blob/main/CONTRIBUTING.md" target="_blank">See something missing? <span className={styles.underline}>Add it here!</span></a>
                             </p>
                         </div>
 
@@ -29,7 +30,7 @@ export default function TopicLayout({ topicData, title, sentences }){
                                 {topicData.map((data) => {
                                     return (
                                         <li className={styles.link} key={data.id}>
-                                            <Link href={`/${pathModifier}/`+data.id}>{data.title}</Link>
+                                            <Link href={`${pathModifier}/`+data.id}>{data.title}</Link>
                                         </li>
                                     )
                                 })}

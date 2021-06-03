@@ -1,0 +1,29 @@
+.container{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.items{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.bottomText{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.switch{
+   text-decoration: underline;
+   cursor: pointer;
+}

@@ -15,10 +15,17 @@
     margin-top: 0px;
 }
 
-.meta_info{
-    width: 90%;
-    text-align: end;
+.meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.meta__right{
+    margin-left: auto;
+    color: rgb(156, 156, 156);
+}
+
 
 .meta_info p {
     margin: 0px;
