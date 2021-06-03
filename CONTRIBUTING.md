@@ -63,7 +63,7 @@ Tips:
 - Big Idea 4: Computer Systems and Networks 11–15%
 - Big Idea 5: Impact of Computing 21–26%
 
-[Here](https://raw.githubusercontent.com/nighthawkcoders/society-of-coders/main/data/gotchas/arrays-hold-reference.md) is an example of a completed post.
+**[Here](https://raw.githubusercontent.com/nighthawkcoders/society-of-coders/main/data/gotchas/arrays-hold-reference.md) is an example of a completed post.**
 
 ## Step 3
 Commit and push your changes and open a pull request to the main repository. It will be reviewed and added to the website.
