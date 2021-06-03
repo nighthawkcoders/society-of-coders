@@ -1,9 +1,9 @@
 ---
 title: 'Test post'
 date: '6-1-21'
-class: 'CSA'
+class: 'CSP'
 unit: 8
 author: 'Nathaniel C'
 ---
 
-Test post
+Test content goes here.

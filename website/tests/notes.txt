@@ -1,0 +1,2 @@
+- Add check to make sure only directories under 'data/'
+- Make sure those subdirectories are updated in global.js
