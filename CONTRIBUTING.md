@@ -20,10 +20,10 @@ Copy and paste the following into your newly created file.
 ---
 title: 'Put your article title here'
 date: 'MM-DD-YYYY'
-class: 'CS?' # CSA or CSP
+class: 'CS*' # CSA or CSP
 section: 1 # A number to represent Unit or Big Idea (optional for pbl)
 keywords: 'keyword1, keyword2 ...' # Keywords to describe your project seperated by commas
-tech: 'tech1, tech2, tech3...' # What you used (Language, frameworks, Database) seperated by commas
+tech: 'tech1, tech2, tech3...' # What you used (Language, frameworks, Database) seperated by commas (only for pbl)
 author: 'Your name' # Optional
 authorLink: 'https://github.com/your-github-here' # Optional 
 ---
@@ -39,7 +39,8 @@ Your content in markdown will go here.
 Tips:
 - The name of your markdown file is <,25 chars long.
 - The title field must be < 70 chars.
-- CollegeBoard Units can only go from 1 to 10.
+- Section is not needed for PBL.
+- 
 - The body of the article doesn't have to be very long, the more compact it is the better it is for studying.
 
 
@@ -62,6 +63,7 @@ Tips:
 - Big Idea 4: Computer Systems and Networks 11–15%
 - Big Idea 5: Impact of Computing 21–26%
 
+[Here](https://raw.githubusercontent.com/nighthawkcoders/society-of-coders/main/data/gotchas/arrays-hold-reference.md) is an example of a completed post.
 
 ## Step 3
 Commit and push your changes and open a pull request to the main repository. It will be reviewed and added to the website.

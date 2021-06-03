@@ -13,12 +13,15 @@ in the objects.
 
 Code example:
 
+```java
 String s1 = new String("APPLE");
 String s2 = new String("APPLE");
 System.out.println(s1 == s2);
 System.out.println(s1.equals(s2));
-
+```
 Result:
 
+```java
 false
 true
+```
