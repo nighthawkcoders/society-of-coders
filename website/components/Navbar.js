@@ -22,7 +22,7 @@ export default function Navbar(){
             </div>
             
             <div className={styles.navItem}>
-                <a href="https://github.com/nighthawkcoders/csa-society"
+                <a href="https://github.com/nighthawkcoders/society-of-coders"
                 target="_blank"
                 className={"fab fa-github "+styles.navItem__text}></a>
             </div>

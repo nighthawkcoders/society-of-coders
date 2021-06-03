@@ -1,4 +1,4 @@
-# csa-society
+# society-of-coders
 Complement to PBL. Review for AP CSA test. Created by students for students. 
 
 [Learn how to contribute (without writing any code!)](https://github.com/nighthawkcoders/csa-society/blob/main/CONTRIBUTING.md).
