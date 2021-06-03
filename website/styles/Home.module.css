@@ -27,7 +27,8 @@
 .featured{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 100px;
 }
 
 @media (max-width: 1200px) {
