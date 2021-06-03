@@ -13,7 +13,7 @@ in the objects.
 Code example:
 
 String s1 = new String("APPLE");
-String s1 = new String("APPLE");
+String s2 = new String("APPLE");
 System.out.println(s1 == s2);
 System.out.println(s1.equals(s2));
 
