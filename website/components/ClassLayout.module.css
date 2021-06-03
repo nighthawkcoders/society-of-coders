@@ -7,11 +7,23 @@
 
 .title{
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .items{
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     gap: 50px;
+}
+
+.bottomText{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.switch{
+   text-decoration: underline;
+   cursor: pointer;
 }

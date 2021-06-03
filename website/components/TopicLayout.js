@@ -9,7 +9,8 @@ export default function TopicLayout({ topicData, class_, title, sentences }){
             <div className={styles.container}>
 
                 <div className={styles.container__box}>
-                    <h1>{title}</h1>
+
+                    <h1 className={styles.title}>{title}</h1>
 
                     <div className={styles.container__rowbox}>
                         <div className={styles.description}>
