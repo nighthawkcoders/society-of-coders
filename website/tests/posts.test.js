@@ -12,13 +12,13 @@ test("Checks that all posts meet requirements in 'data' directory", () => {
             expect(post.title).not.toBeUndefined();
             expect(post.class === "csa" || post.class === "csp").toBeTruthy();
 
-            if(post.topic !== "pbl"){
-                if(post.class === "csa"){
-                    expect(post.section >= 1 && post.section <= 10).toBeTruthy();
-                }else if(post.class === "csp"){
-                    expect(post.section >= 1 && post.section <= 5).toBeTruthy();
-                }
-            }
+            // if(post.topic !== "pbl"){
+            //     if(post.class === "csa"){
+            //         expect(post.section >= 1 && post.section <= 10).toBeTruthy();
+            //     }else if(post.class === "csp"){
+            //         expect(post.section >= 1 && post.section <= 5).toBeTruthy();
+            //     }
+            // }
 
 
         });
