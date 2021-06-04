@@ -27,6 +27,12 @@ public int thisReturnsInt(){
 // Declared the same variable twice
 int temperature = 22;
 String temperature = "Hot Outside";
+
+public void only1Arg(int a){
+  ...
+}
+only1Arg(1, 2); // Passed 2 only 1 allowed
+
 ```
 
 Run Time errors on the other hand don't show up when you try to compile your code, instead they occur when you try to perform an illegal action.
