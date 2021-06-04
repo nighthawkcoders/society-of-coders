@@ -32,5 +32,13 @@ export const TOPIC_BY_NAME = {
             "Lorem ipsum number 1.",
             "Lorem ipsum number 2."
         ]
+    },
+
+    "pbl":{
+        title:"PBL",
+        description:[
+            "Project Based learning ...",
+            "Learn and create your own projects"
+        ]
     }
 }

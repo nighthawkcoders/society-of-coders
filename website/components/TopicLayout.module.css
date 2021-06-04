@@ -54,7 +54,30 @@
 }
 
 @media (max-width: 799px) {
+    
+    .container__box{
+        overflow: auto;
+    }
+
     .container__rowbox{
         flex-direction: column;
+    }
+
+    .description{
+        min-width: none;
+        max-width: none;
+    }
+
+    .lead{
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+
+    .editText{
+        display: none;
+    }
+
+    .content{
+        margin-top: 50px;
     }
 } 

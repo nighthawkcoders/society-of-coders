@@ -31,18 +31,29 @@
   gap: 100px;
 }
 
+.about{
+  text-align: center;
+  margin: 100px;
+}
+
 @media (max-width: 1200px) {
   .featured{
     flex-direction: column;
     align-items: center;
     gap: 50px;
   }
+
 }
 
+@media (max-width: 800px) {
+  .title{
+    font-size: 1.5rem;
+  }
 
-.about{
-  text-align: center;
-  margin: 100px;
+  .lead{
+    font-size: 1rem;
+  }
+
 }
 
 

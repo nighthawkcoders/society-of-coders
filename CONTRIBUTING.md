@@ -40,9 +40,8 @@ Tips:
 - The name of your markdown file is <,25 chars long.
 - The title field must be < 70 chars.
 - Section is not needed for PBL.
-- 
 - The body of the article doesn't have to be very long, the more compact it is the better it is for studying.
-
+- **Preview markdown articles before pushing to make sure the formatting is as intended**
 
 **CSA Units**:
 - Unit 1: Primitive Types

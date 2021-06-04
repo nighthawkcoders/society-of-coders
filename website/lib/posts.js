@@ -34,6 +34,7 @@ export function getTopicPaths(){
     const paths = [];
     CLASSES.map(({title, topics}) => {
         title = title.toLowerCase();
+        topics.push("pbl")
         topics.map((topic) => {
             paths.push({
                 params:{
