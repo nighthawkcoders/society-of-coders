@@ -18,13 +18,9 @@ However, if one of the connections broke from B to C, for example, then Device A
 
 In order to prevent this from happening, people developed the idea of fault tolerance. This allows devices to have multiple connections between each device. That means that if one of the connections were the break, I would have another path to go through to send my data from Device A to Device B. 
 
-Here is a small example of how fault tolerance could work. Say I wanted to pass some data from Device A to Device B. If all the connections were stable, then I would be able to immediately go from A to B. However, if that connection between them were broken, I would still have another path to send the data to B (A to D to B).
+Here is a small example of how fault tolerance could work. Imagine there was also a curved connections connecting A and D. Say I wanted to pass some data from Device A to Device B. If all the connections were stable, then I would be able to immediately go from A to B. However, if that connection between them were broken, I would still have another path to send the data to B (A to D to B).
 
-A---B
-|  /
-| /
-|/
-D
+A-B-D
 
 This is a very simple example. In reality, there will be way more connections between each device so even if 4 different connections broke, there would usually be a way to fix them. 
 
