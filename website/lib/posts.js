@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import remark from 'remark';
 import html from 'remark-html';
 import highlight from 'remark-highlight.js';
+import gfm from 'remark-gfm';
 import { CLASSES } from './global';
 
 const DATA_DIR = path.join(path.dirname(process.cwd()), "data");
@@ -68,6 +69,7 @@ export async function getPostContentByTopic(topic, id){
 
     const processedContent = await remark()
         .use(highlight)
+        .use(gfm)
         .use(html)
         .process(matterResult.content)
 
