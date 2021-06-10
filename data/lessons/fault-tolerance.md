@@ -9,18 +9,20 @@ I would say one of the easiest topics to understand for the AP exam is Fault Tol
 
 In order to connect different devices, we need to have wires or some form of connection between those devices. An example of this is shown below: 
 
-A-B-C-D-E-F
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/852627989194604587/852628019268419614/rwOUo.png" />
+<p>
 
-This is a very simple diagram since there is only one connection in between each device.
+This is a little more complex, but notice all the lines that are connecting each computing device. Now imagine you just cut the wire between one computing device. These devices would still be able to communicate with eachother because of those extra lines. 
+  
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/852627989194604587/852628612695719956/L4PVrDVkeMIAAAAASUVORK5CYII.png" />
+<p>
 
-Now this is the idea that you need to understand from this diagram. If I am on device A and I need to send some data to Device D, then I will have to pass the data through device B and C before reaching Device D. 
-However, if one of the connections broke from B to C, for example, then Device A would not be able to transfer that data over to device D. 
+Now this is the idea that you need to understand from this diagram. If I am on device Oakland and I need to send some data to Device New York, then I will have to pass the data through device Austin and device Tampa before reaching Device New York. I could also just go through Oakland, Austin, to New York. 
+However, if one of the connections broke from those devices, for example Austin and New York, then Oakland can go through a different path to send the data. 
 
-In order to prevent this from happening, people developed the idea of fault tolerance. This allows devices to have multiple connections between each device. That means that if one of the connections were the break, I would have another path to go through to send my data from Device A to Device B. 
-
-Here is a small example of how fault tolerance could work. Imagine there was also a curved connections connecting A and D. Say I wanted to pass some data from Device A to Device B. If all the connections were stable, then I would be able to immediately go from A to B. However, if that connection between them were broken, I would still have another path to send the data to B (A to D to B).
-
-A-B-D
+This idea is known as fault tolerance. This allows devices to have multiple connections between each device. That means that if one of the connections were the break, I would have another path to go through to send my data from Device A to Device B. 
 
 This is a very simple example. In reality, there will be way more connections between each device so even if 4 different connections broke, there would usually be a way to fix them. 
 
