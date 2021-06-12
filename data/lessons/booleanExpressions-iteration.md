@@ -15,12 +15,12 @@ author: 'Neil Sahai'
   
 Here is a sample if statement
 
-  `int x = 20;
+int x = 20;
 int y = 18;
 
 if (x > y) {
   System.out.println("x is greater than y");
-} `
+}
 
 Boolean Operators are essential to implementing a conditional statement.
   
