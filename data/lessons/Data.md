@@ -49,10 +49,7 @@ There are VITAL defintions. On the AP exam, a sample question can be: Which on t
   <p align="center">
   <img src="https://ourworldindata.org/exports/children-per-woman-UN-74fc09d9cb68ef3e2c16e8223117bd15_v8_850x600.svg" />
 <p>
-* This right here has a clear downward trend. 
-* One can extend the graph and can make predictions. 
-* It is safe to say that is 2020, the children per women will be lower than 2015. 
-As you can tell, these are rather simple. There are question on this exam that are easy point so make sure you get them. 
+As you can see, there is a clear downward trend. One can make safe inferences on this trend. It would be safe the say that there will be less children from women is 2020 than 2015. As you can tell, these are rather simple. There are question on this exam that are easy point so make sure you get them! 
 
 A. Pracice question
  <p align="center">
@@ -70,6 +67,19 @@ What trends are apparent in this chart?
 
   The correct answer is B! Hopefully you got the right answer. 
   
-  Sometimes there is a bit of fluctuations in the data, to understand the correalation, we must us
+  Sometimes there is a bit of fluctuations in the data, to understand the correalation, we must use a line of best fit.
+  <p align="center">
+  <img src="https://cdn.kastatic.org/ka-perseus-images/033e257032f64418c742c458ea915b2e53e595f0.png" />
+<p>
+  There is still an overall postive correlation as eviednced by the line of best fit. The line of best fit can also let you extrapolate the data. 
   
-  
+  7. Making Predictions 
+  One must look at statistical trends and make accurate conclusions 
+  Lets look an example: 
+  <p align="center">
+  <img src="https://www.collegetuitioncompare.com/images/charts/colleges/american-university-tuition-fees-chart.jpg" />
+<p>
+ 
+  * A fesible conclusion is that the price for college is increasing. 
+  * But something unreasonable is that the price is increasing 20k every year. 
+  * belive it or not these do show up on the ape exam and you ability to analze teands will help! 
