@@ -17,7 +17,7 @@ Here is a sample if statement:
 
 Note that every if statement has a conditional operator that can be evaluated by a simple true or false statement.
 
-`
+
 int x = 20;
 int y = 18;
 
@@ -26,7 +26,9 @@ if (x > y) {
   System.out.println("x is greater than y");
 
 }
-`
+
+
+
 Boolean Operators are essential to implementing a conditional statement.
   
 | Common Operators | Description |
