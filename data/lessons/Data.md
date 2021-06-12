@@ -83,3 +83,4 @@ What trends are apparent in this chart?
   * A fesible conclusion is that the price for college is increasing. 
   * But something unreasonable is that the price is increasing 20k every year. 
   * belive it or not these do show up on the ape exam and you ability to analze teands will help! 
+  Good luck!
