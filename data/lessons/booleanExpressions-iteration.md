@@ -17,6 +17,7 @@ Here is a sample if statement
 
   `int x = 20;
 int y = 18;
+
 if (x > y) {
   System.out.println("x is greater than y");
 } `
@@ -31,7 +32,7 @@ Boolean Operators are essential to implementing a conditional statement.
 | == | Is equal to (compares values) |
 | != | Is not equal to |
 
-| A  | B  | A&&B | A||B | !A  | !B | !(A&&B)  |  !A||B |
+| A  | B  | A&&B | A or B | !A  | !B | !(A&&B)  |  !A Or B |
 |---|---|---|---|---|---|---|---|
 |  T |  T | T | T  |  F | F  | F  | F  |
 |  T |  F | F | T |  F |  T |  T |  T |
