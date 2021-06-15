@@ -45,5 +45,9 @@ For example, here is the conversion of the binary number 01010101:
 
 From this, we can see that the binary number 01010101 converted do decimal is 85.
 
+Displayed below is another example:
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/670016324008804365/854204686223671366/how-to-convert-decimal-to-binary-and-binary-to-decimal.png" />
+<p>
 
 For more on this topic (binary), visit CollegeBoard and go to Big Idea 2. The first section is called "Binary Numbers" and there should be videos to help you with additional information.
