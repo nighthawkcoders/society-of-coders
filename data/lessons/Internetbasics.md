@@ -1,5 +1,4 @@
-
- ---
+---
  title: 'Internet basics '
  date: '06-12-2021'
  class: 'CSP'
@@ -7,6 +6,7 @@
  author: 'Ak Prathipati '
  ---
  purpose: For students to understand the basics of the internet 
+ 
  Outcome: 
  * Students understand IP adress 
  * Students understand the components of the Internet 
