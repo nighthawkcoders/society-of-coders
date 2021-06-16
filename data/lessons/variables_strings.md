@@ -1,9 +1,9 @@
 ---
 title: 'Variables and strings'
-date: '6/14/2021'
+date: '6/15/2021'
 class: 'CSP' 
-section: 2 
-keywords: 'binary, data' 
+section: 3 
+keywords: 'variables, strings' 
 author: 'Kian Kishimoto' 
 authorLink: 'https://github.com/Uhpachee' 
 ---
