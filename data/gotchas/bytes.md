@@ -1,3 +1,4 @@
+---
 title: 'Bits and bytes and binary'
 date: '06-16-2021'
 class: 'CSP' # CSA or CSP
