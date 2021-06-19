@@ -20,7 +20,7 @@ export default function Layout({ children, pageTitle, helpIconPresent }){
             </div>
 
             <footer className={styles.footer}>
-                Created by the <a href="https://nighthawkcoders.cf/" className={styles.link}>Nighthawk Society of Coders</a>
+                Created by the <a href="https://nighthawkcodingsociety.com/" className={styles.link}>Nighthawk Society of Coders</a>
             </footer>
 
             {helpIconPresent ? 
