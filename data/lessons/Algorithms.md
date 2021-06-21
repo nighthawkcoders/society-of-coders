@@ -8,7 +8,7 @@ author: 'Linda Long '
 
 An operator is a symbol that carries out mathematical computation.
 
-| Arithmetic operator | Description | Example |
+| Arithmetic operator | Description |
 | ------------- | ----------- | 
 | + | Addition | 1 + 2 = 3 |
 | - | Subtraction | 5 - 5 = 0 |
