@@ -27,11 +27,24 @@ Note:
   - Modules
   - Multiplication & Division
   - Addition & Subtraction
+* Examples:
+  - 1 + 2 = 3
+  - 5 - 5 = 0
+  - 3 * 2 = 6
+  - 4 / 2 = 2
+  - 5 MOD 2 = 1
 
 
 | Comparison operator | Description | 
 | ------------- | ----------- | 
 | = | Equal | 1 = 1 |
 | != | Not equal | 2 != 1 |
-| < | Multiplication | 3 < 6 |
-| > | Division | 6 > 3 |
+| < | Less than | 3 < 6 |
+| > | Greater than | 6 > 3 |
+
+Note:
+* Examples:
+  - 1 = 1
+  - 2 != 1
+  - 3 < 6
+  - 6 > 3
