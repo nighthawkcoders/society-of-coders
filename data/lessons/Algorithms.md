@@ -14,7 +14,7 @@ An operator is a symbol that carries out mathematical computation.
 | - | Subtraction | 5 - 5 = 0 |
 | * | Multiplication | 3 * 2 = 6 |
 | / | Division | 4 / 2 = 2 |
-| % | Modules | 5 MOD 2 = 1 |
+| % | Modules |
 
 Note:
 * Modulus is the remainder of a division.
