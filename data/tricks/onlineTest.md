@@ -26,4 +26,6 @@ To best prepare for the digital AP CSP exam, students should watch review sessio
   - Try to finish every single multiple choice within 1.5 minutes.
 * Do not go back to questions you've already answered and skip ahead since you are unable to do so on the actual exam.
 
-Remember to read the AP Computer Science Principles Exam Reference Sheet prior to the exam. Finish the set ups at least one day beforehand. Check in 30 minutes before the exam time. 
+Remember to read the AP Computer Science Principles Exam Reference Sheet prior to the exam. 
+Finish the set ups at least one day beforehand. 
+Check in 30 minutes before the exam time. 
