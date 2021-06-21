@@ -6,7 +6,9 @@ section: 3
 author: 'Linda Long '
 ---
 
+
 An operator is a symbol that carries out mathematical computation.
+
 
 | Arithmetic operator | Description |
 | ------------- | ----------- | 
@@ -14,7 +16,8 @@ An operator is a symbol that carries out mathematical computation.
 | - | Subtraction | 5 - 5 = 0 |
 | * | Multiplication | 3 * 2 = 6 |
 | / | Division | 4 / 2 = 2 |
-| % | Modules |
+| % | Modules | 5 MOD 2 = 1 |
+
 
 Note:
 * Modulus is the remainder of a division.
@@ -25,7 +28,8 @@ Note:
   - Multiplication & Division
   - Addition & Subtraction
 
-| Comparison operator | Description | Example |
+
+| Comparison operator | Description | 
 | ------------- | ----------- | 
 | = | Equal | 1 = 1 |
 | != | Not equal | 2 != 1 |
