@@ -52,6 +52,34 @@ public String listEveryone(Model model) {
     return "person/peopleTable";
 }
 ```
-Inside of the HTML document, two values will be accessible that were passed from Java.
+Inside of the HTML document, two values will be accessible that were passed from Java. Each piece of data is now accessible ThymeLeaf object.
 1. `personName` which holds a single raw `String` "Rupert"
 2. `personObj` which hold a `Person` object with both attributes "Clive" and "Buckley" accessible using the same getter methods as Java
+
+## Key ThymeLeaf Syntax
+ThymeLeaf goes hand in hand with Spring data and has some helpful syntax that allows for each loops, switch cases, etc. 
+> A ThymeLeaf object is inserted into HTML with `th:text=` inside of any HTML tag that displays text. The ThymeLeaf object itself is read with this syntax `${_objectName_}`.
+
+Combining these two principles, consider the following code segment where the first name of our `Person` objects are displayed:
+``` HTML
+<body>
+    <div class="content">
+        <h1>
+            <p th:text="${personName}"></p>
+            <p th:text="${personObj.getFirstName()}"></p>
+        </h1>
+    </div>
+</body>
+```
+Notice that since `personName` is a raw String, it can be referred to directly. In contrast, as the naming convention implies, `personObj` cannot be referred to directly. In order to extract data from the instance variables, a getter must be used. In fact, any method of the class being referenced as if it is in Java as long as it is inside of the brackets (for this example only methods that return a value are practical). 
+> Can multiple objects be inserted on the same line? Yes, ThymeLeaf follows general concatentation syntax:
+``` HTML
+<body>
+    <div class="content">
+        <h1>
+            <p th:text="'Person 1: ' + ${personName} + ', Person 2: ' + ${personObj.getFirstName()} + ' ' + ${personObj.getLastName()}"></p>
+        </h1>
+    </div>
+</body>
+```
+> Person 1: Rupert, Person 2: Clive Buckley
