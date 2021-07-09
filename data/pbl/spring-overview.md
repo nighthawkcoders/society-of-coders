@@ -77,7 +77,8 @@ Notice that since `personName` is a raw String, it can be referred to directly. 
 <body>
     <div class="content">
         <h1>
-            <p th:text="'Person 1: ' + ${personName} + ', Person 2: ' + ${personObj.getFirstName()} + ' ' + ${personObj.getLastName()}"></p>
+            <p th:text="'Person 1: ' + ${personName} + ', Person 2: ' + ${personObj.getFirstName()} + ' ' 
+                        + ${personObj.getLastName()}"></p>
         </h1>
     </div>
 </body>
