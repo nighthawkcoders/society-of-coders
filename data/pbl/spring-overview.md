@@ -1,8 +1,8 @@
 ---
 title: 'Spring & ThymeLeaf Overview'
 date: '07-08-2021'
-class: 'CSA*'
-section: Spring
+class: 'CSA'
+section: 'Spring'
 keywords: 'java, spring, html,'
 tech: 'Java, HTML, Spring, ThymeLeaf, Hibernate, MySQL'
 author: 'Michael Hayes'
